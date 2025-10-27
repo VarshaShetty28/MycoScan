@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset body margin */
+body {
+  margin: 0;
+  padding: 0;
+}
