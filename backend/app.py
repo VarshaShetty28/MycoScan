@@ -119,7 +119,6 @@ def generate_gradcam_heatmap(model, img_array):
 
             for layer in model.layers[1:]:
                 x = layer(x)
-
             predictions = x
             class_channel = predictions[:, 0]
 
@@ -206,8 +205,7 @@ def create_gradcam_images(img_path, heatmap, img_array):
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    """Predict mushroom - EDIBLE or NON-EDIBLE"""
-    
+    """Predict mushroom - EDIBLE or NON-EDIBLE"""    
     if model is None:
         return jsonify({"error": "Model not loaded"}), 500
 

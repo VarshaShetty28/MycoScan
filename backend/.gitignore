@@ -1,0 +1,48 @@
+# Python virtual environment
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# VS Code settings
+.vscode/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Model files (large binary files)
+*.h5
+*.hdf5
+*.pb
+*.tflite
+
+# Temporary uploads and debug folders
+debug_images/
+temp_uploads/
+
+# Log files
+*.log
+
+# Checkpoints or training runs
+checkpoints/
+runs/
+saved_models/
+logs/
+
+# Jupyter/Colab
+.ipynb_checkpoints/
+
+# Environment files
+.env
+*.env
+
+# __pycache__ inside subdirectories
+*/__pycache__/
+
+# Cache data
+.cache/
